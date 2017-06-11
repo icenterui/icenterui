@@ -1,0 +1,56 @@
+{
+  "name": "nuxtjs.org",
+  "version": "1.0.0",
+  "description": "Nuxt.js official website",
+  "main": "index.js",
+  "dependencies": {
+    "icenterui":"git@github.com:icenterui/icenterui.git",
+    "axios": "^0.15.3",
+    "highlight.js": "^9.10.0",
+    "lodash": "^4.17.4",
+    "normalize.css": "^5.0.0",
+    "nuxt": "^0.10.3",
+    "yun-ui": "^0.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "node-sass": "^4.5.1",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^6.0.3"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "build-check": "nuxt build --analyze",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy-en": "surge dist/ nuxtjs.org",
+    "deploy-ja": "surge dist/ ja.nuxtjs.org",
+    "deploy-ko": "surge dist/ ko.nuxtjs.org",
+    "deploy-ru": "surge dist/ ru.nuxtjs.org",
+    "deploy-zh": "surge dist/ zh.nuxtjs.org",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern plugins/ga.js .",
+    "precommit": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuxt/nuxtjs.org.git"
+  },
+  "keywords": [
+    "nuxt.js",
+    "vuejs",
+    "nextjs",
+    "js"
+  ],
+  "author": "alexchopin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nuxt/nuxtjs.org/issues"
+  },
+  "homepage": "https://github.com/nuxt/nuxtjs.org#readme"
+}
